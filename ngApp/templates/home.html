@@ -1,0 +1,14 @@
+<button type="button" ng-click="vm.getAnswer()">Answer</button>
+<button type="button" ng-click="vm.getFortune()">Fortune</button>
+
+<div ng-show="vm.isLoading">
+Loading, please wait!
+</div>
+
+<div ng-show="!vm.isLoading && vm.output">
+<h2>{{vm.output}}</h2>
+</div>
+
+<div ng-show="!vm.isLoading && !vm.output">
+  <h2>Click a button to receive a fortune or answer.</h2>
+</div>
